@@ -1,0 +1,56 @@
+{
+    "name": "appserver-io-lab/websocket-server",
+    "description": "Experimental server for our websocket implementation ",
+    "homepage": "https://github.com/appserver-io-lab/websocket-server",
+    "license": "OSL-3.0",
+    "require": {
+        "php": ">=5.4.0",
+        "react/socket" : "0.4.*",
+        "cboden/ratchet" : "0.3.*",
+        "react/event-loop" : "0.4.*",
+        "symfony/config": "~2.3",
+        "appserver-io-lab/websocket-protocol": "0.1.*",
+        "appserver-io/server": "~1.0",
+        "appserver-io/appserver": "~1.0",
+        "appserver-io/storage": "~1.0",
+        "appserver-io-psr/application": "~1.0"
+    },
+    "require-dev": {
+        "appserver-io/build": "0.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "AppserverIo\\Lab\\WebsocketServer": [
+                "src/",
+                "tests/"
+            ]
+        }
+    },
+    "config": {
+        "github-oauth": {
+            "github.com": "604a3b5943228e434a5b52c2ba3cf72286d30db9"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tim Wagner",
+            "email": "tw@appserver.io",
+            "homepage": "https://github.com/wagnert",
+            "role": "Developer"
+        },
+        {
+            "name": "Bernhard Wick",
+            "email": "bw@appserver.io",
+            "homepage": "https://github.com/wick-ed",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "tw@appserver.io",
+        "issues": "https://github.com/appserver-io/appserver/issues",
+        "source": "https://github.com/appserver-io-lab/websocket-server"
+    },
+    "keywords": [
+        "php websocket server protocol"
+    ]
+}
